@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "HelpMeOut",
+    "description": "Record screen in Chrome",
+    "icons": {
+      "128": "icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+      }
+    },
+    "host_permissions": [
+      "http://*/*", 
+      "https://*/*"
+    ],
+    "permissions": [
+      "scripting",
+      "tabs",
+      "activeTab",
+      "audioCapture",
+      "videoCapture",
+      "desktopCapture"
+    ],
+    "version": "1.0",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  

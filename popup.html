@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0" />
+  <title>Screen Recorder</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&family=Work+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body style="border-radius: 1.5rem;">
+  <div class="content">
+    <div class="nav-header">
+      <div class="header-title">
+        <img src="./helpmeout.svg" alt="helpmeout" width="28px" height="28px" />
+        <h2>HelpMeOut</h2>
+
+
+      </div>
+      <div class="header-settings">
+        <img src="./setting.svg" alt="settings" style="cursor: not-allowed" />
+
+        <button id="closeButton"><img src="./close-circle.svg" alt="close" width="20px" height="20px" /></button>
+
+      </div>
+    </div>
+
+    <div style="margin-top: 16px;">
+      <p style="color: #413C6D; font-weight: 400;width: 225px;">This extension helps you record and share help videos
+        with ease.</p>
+    </div>
+
+    <div class="capture-options" style="cursor: not-allowed;">
+      <div class="fullscreen">
+        <img src="./monitor.svg" alt="monitor" width="32px" height="32px" />
+        <p>Full Screen</p>
+      </div>
+
+      <div class="copy" style="cursor: not-allowed;">
+        <img src="./copy.svg" width="32px" height="32px" alt="copy" />
+        <p>Current Tab</p>
+      </div>
+
+    </div>
+
+    <div class="camera-option">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="./video-camera.svg" width="24px" height="24px" alt="video-camera" />
+        <p style="color:#100A42;">Camera</p>
+
+      </div>
+      <div>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="audio-option">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="./microphone.svg" width="24px" height="24px" alt="video-camera" />
+        <p style="color:#100A42;">Audio</p>
+
+      </div>
+      <div>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="btn" style="margin-top: 24px;">
+      <button id="start_video">Start Recording</button>
+    </div>
+
+    <div class="btn" style="margin-top: 24px;">
+      <button id="stop_video">Stop</button>
+    </div>
+  </div>
+
+
+  <!-- <div class="controls-container">
+    <div class="controls-content">
+      <div class="time">
+        <p>00:03:45</p>
+        <div class="record-icon"></div>
+        <div class="division"></div>
+      </div>
+      <div class="controls">
+        <div class="pause">
+          <div class="control-circle">
+
+          </div>
+          <p>Pause</p>
+        </div>
+        <div class="stop">
+          <div class="control-circle">
+            <img src="https://svgshare.com/i/y6Q.svg" />
+          </div>
+          <p>Stop</p>
+        </div>
+        <div class="camera">
+          <div class="control-circle">
+
+          </div>
+          <p>Camera</p>
+        </div>
+        <div class="mic">
+          <div class="control-circle">
+
+          </div>
+          <p>Mic</p>
+        </div>
+        <div class="trash">
+          <div class="control-circle" style="background: #4B4B4B; border: 1px solid #000;">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
